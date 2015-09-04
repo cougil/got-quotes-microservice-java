@@ -1,0 +1,9 @@
+language: java
+jdk:
+- oraclejdk8
+
+after_success:
+- ./gradlew copyTar
+- mkdir -p ./aws/files/got-quotes-microservice-java/opt
+- cp ./target/got-quotes-microservice-java.tar ./aws/files/got-quotes-microservice-java/opt
+- cd ./aws && ./scripts/build-image.sh got-quotes-microservice-java.json
