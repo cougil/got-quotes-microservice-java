@@ -23,7 +23,7 @@
 			"instance_type": "{{user `ec2_instance_type`}}",
 			"ssh_username": "{{user `ec2_ssh_username`}}",
 			"ssh_timeout": "{{user `ec2_ssh_timeout`}}",
-			"ami_name": "{{user `basename`}}-{{user `appversion`}}",
+			"ami_name": "{{user `basename`}}-{{ isotime \"20060102150405\"}} (builder)",
 			"name": "{{user `basename`}}-{{ isotime \"20060102150405\"}} (builder)",
 			"ami_virtualization_type": "hvm",
 			"tags": {
