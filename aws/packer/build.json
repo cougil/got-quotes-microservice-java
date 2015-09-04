@@ -10,7 +10,7 @@
 		"basename": "got-quotes-microservice-java",
 		"creation_time": "{{env `creation_time`}}",
 		"appversion": "{{env `appversion`}}",
-		"version" : "{{env `version}}",
+		"version" : "{{env `version`}}",
         "creator": "{{env `creator`}}",
 		"datadog_api_key" : "{{env `datadogToken`}}"
 	},
