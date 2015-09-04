@@ -29,7 +29,7 @@ import scmspain.karyon.restrouter.KaryonRestRouterModule;
 public interface AppServer {
     class KaryonRestRouterModuleImpl extends KaryonRestRouterModule {
 
-        static final int DEFAULT_PORT = 8081;
+        static final int DEFAULT_PORT = 8080;
         static final int DEFAULT_THREADS = 50;
 
         private static final Logger LOGGER = LoggerFactory.getLogger(KaryonRestRouterModuleImpl.class);
