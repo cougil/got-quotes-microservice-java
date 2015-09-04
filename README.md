@@ -1,5 +1,5 @@
 # GoT Quotes microservice in Java 
-
+  
 ## Description
 
 A very simple GoT quotes service example in Java.  
