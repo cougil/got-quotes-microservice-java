@@ -52,12 +52,4 @@ sudo yum install -y monit
 sudo chkconfig monit on
 sudo chkconfig --level 345 monit on
 
-# Install DataDog monitoring
-echo "Installing datadog agent"
-sudo chown root:root /etc/yum.repos.d/datadog.repo
-sudo yum makecache
-sudo yum install -y datadog-agent
-sudo sh -c "sed 's/api_key:.*/api_key: $DD_API_KEY/' /etc/dd-agent/datadog.conf.example > /etc/dd-agent/datadog.conf"
-sudo chkconfig datadog-agent off
-
 sleep 1
