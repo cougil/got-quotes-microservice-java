@@ -11,7 +11,7 @@
 		"creation_time": "{{env `creation_time`}}",
 		"appversion": "{{env `appversion`}}",
 		"version" : "{{env `version`}}",
-        "creator": "{{env `creator`}}",
+        "creator": "{{env `creator`}}"
 	},
 	"builders": [
 		{
