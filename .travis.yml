@@ -5,10 +5,7 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_05d013ba3d14_key -iv $encrypted_05d013ba3d14_iv
   -in cert.pem.enc -out cert.pem -d
 - chmod 600 cert.pem
-- sudo apt-get update
-- sudo apt-get install dnsutils --assume-yes
-- export packer_host=$(nslookup packer.hackathon.schibsted.io | grep -A10 answer |
-  grep Address | cut -d ' ' -f2 | head -1)
+- export packer_host=$(curl -X GET "http://ec2-52-17-22-205.eu-west-1.compute.amazonaws.com:5000/")
 - echo $packer_host
 after_success:
 - ./gradlew copyTar
