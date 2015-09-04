@@ -7,7 +7,7 @@
 		"ec2_source_ami": "ami-a10897d6",
 		"ec2_ssh_username": "ec2-user",
 		"ec2_ssh_timeout": "7m",
-		"basename": "got-quotes-microservice-java",
+		"basename": "got-quotes-ms-java",
 		"creation_time": "{{env `creation_time`}}",
 		"appversion": "{{env `appversion`}}",
 		"version" : "{{env `version`}}",
