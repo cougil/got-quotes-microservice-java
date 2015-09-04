@@ -12,5 +12,3 @@ sudo chown -R root:root /opt/got-quotes-microservice-java
 sudo chmod 755 /opt/got-quotes-microservice-java/bin/got-quotes-microservice-java
 
 sudo mkdir /var/log/got-quotes-microservice-java
-
-sudo bash -c "echo tags:got_quotes_microservice_java >> /etc/dd-agent/datadog.conf"

@@ -12,7 +12,6 @@
 		"appversion": "{{env `appversion`}}",
 		"version" : "{{env `version`}}",
         "creator": "{{env `creator`}}",
-		"datadog_api_key" : "{{env `datadogToken`}}"
 	},
 	"builders": [
 		{
