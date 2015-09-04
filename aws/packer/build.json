@@ -26,8 +26,7 @@
 			"ami_name": "{{user `basename`}}-{{user `appversion`}}",
 			"name": "{{user `basename`}}-{{user `appversion`}}",
 			"ami_virtualization_type": "hvm",
-			"enhanced_networking": "true",
-				"tags": {
+			"tags": {
 				"Name": "{{user `basename`}}-{{ isotime \"20060102150405\"}} (builder)",
 				"appversion": "{{user `appversion`}}",
 				"base_ami_version": "{{user `ec2_source_ami`}}",
