@@ -2,7 +2,7 @@
 
 set -e
 
-app="got_quotes_microservice_java"
+app="got_quotes_ms_java"
 
 source './packer/functions.sh'
 source './packer/params.sh'
