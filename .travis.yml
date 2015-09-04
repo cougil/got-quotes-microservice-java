@@ -15,14 +15,6 @@ after_success:
 - mkdir -p ./aws/files/got-quotes-microservice-java/opt
 - cp ./target/got-quotes-microservice-java.tar ./aws/files/got-quotes-microservice-java/opt
 - rsync -a -arvce "ssh -i cert.pem -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
-  ./aws packer@$packer_host:/tmp/${TRAVIS_BUILD_ID}
+  ./aws/ packer@$packer_host:/tmp/${TRAVIS_BUILD_ID}
 - ssh -t -t -i cert.pem -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
   packer@$packer_host "${TRAVIS_BUILD_ID}"
-
-
-
-
-
-
-
-- cd ./aws && ./scripts/build-image.sh got-quotes-microservice-java.json
